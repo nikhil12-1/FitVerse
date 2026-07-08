@@ -8,6 +8,8 @@ const app = express();
 const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
 const slowdown = require('./middleware/slowdown.js');
+
+app.set("trust proxy",1);
 app.use(helmet());
 app.use(express.json());
 
