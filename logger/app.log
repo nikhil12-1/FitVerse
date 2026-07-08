@@ -1,0 +1,16 @@
+2026-07-06 19:42:55 [ERROR] Error occurred while registering user: Invalid login: 535 5.7.8 Authentication failed
+2026-07-06 19:46:29 [INFO] Connected to database
+2026-07-06 19:46:42 [INFO] Connected to database
+2026-07-06 19:47:40 [INFO] Connected to database
+2026-07-06 19:48:43 [INFO] User registered successfully: ${newUser.email}
+2026-07-06 19:48:46 [INFO] Email Sent: ${info}
+2026-07-06 19:50:30 [INFO] Connected to database
+2026-07-06 19:52:08 [INFO] Connected to database
+2026-07-06 19:52:18 [INFO] Connected to database
+2026-07-06 19:52:48 [INFO] User registered successfully: nikhil120820@gmail.com
+2026-07-06 19:52:49 [INFO] Email Sent: <47816042-dfe3-ca5e-e99a-91bd8ac09c98@smtp-brevo.com>
+2026-07-06 19:54:13 [INFO] Connected to database
+2026-07-06 19:54:20 [INFO] Connected to database
+2026-07-06 19:54:33 [INFO] User registered successfully: nikhil120820@gmail.com
+2026-07-06 19:54:34 [INFO] Email Sent: <82317c03-de6b-bba2-6392-89dbb7f88238@gmail.com>
+2026-07-06 19:55:32 [INFO] Connected to database
