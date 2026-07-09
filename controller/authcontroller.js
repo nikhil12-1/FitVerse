@@ -90,14 +90,18 @@ module.exports = {
       });
       logger.info(`User registered successfully: ${newUser.email}`);
 
-      const info = await mailSender.sendMail({
-        from: process.env.SMTP_FROM || "nikhil120820@gmail.com",
-        to: email,
-        subject: "Welcome to FitVerse",
-        text: `Hi ${name || "there"}, welcome to FitVerse!`,
-        html: buildWelcomeEmailHtml(name),
-      });
-      logger.info(`Email Sent: ${info.messageId}`);
+      try {
+        const info = await mailSender.sendMail({
+          from: process.env.SMTP_FROM || "nikhil120820@gmail.com",
+          to: email,
+          subject: "Welcome to FitVerse",
+          text: `Hi ${name || "there"}, welcome to FitVerse!`,
+          html: buildWelcomeEmailHtml(name),
+        });
+        logger.info(`Email Sent: ${info.messageId}`);
+      } catch (mailError) {
+        logger.error("Welcome email could not be sent:", mailError);
+      }
       res.status(200).json({ message: "Register successfully", data: newUser });
     } catch (error) {
       logger.error("Error occurred while registering user:", error);
