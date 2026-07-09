@@ -97,7 +97,7 @@ module.exports = {
       //   text: `Hi ${name || "there"}, welcome to FitVerse!`,
       //   html: buildWelcomeEmailHtml(name),
       // });
-      logger.info(`Email Sent: ${info.messageId}`);
+      // logger.info(`Email Sent: ${info.messageId}`);
       res.status(200).json({ message: "Register successfully", data: newUser });
     } catch (error) {
       logger.error("Error occurred while registering user:", error);
